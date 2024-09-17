@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #f0f403c5, #f78d03); /* Dark blue gradient */
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+}
+
+.wrapper {
+    text-align: center;
+}
+
+h1.text-center {
+    color: #2c02fe;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    backdrop-filter: blur(10px); /* Glass effect */
+    display: inline-block;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-bottom: 3px solid #00E676; /* Green glow when focused */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.button {
+    padding: 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 70px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: linear-gradient(145deg, #243B55, #141E30); /* Gradient buttons */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.05); /* Lifting effect on hover */
+    background: linear-gradient(145deg, #f81303, #1bf303); /* Bright color on hover */
+}
+
+.button:active {
+    transform: translateY(0); /* Reset after click */
+    background: linear-gradient(145deg, #141E30, #243B55); /* Revert back after click */
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 55px;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .input {
+        font-size: 1.5rem;
+    }
+}
